@@ -293,17 +293,6 @@ DOCUMENTATION = '''
         vars:
           - name: ansible_ssh_use_tty
             version_added: '2.7'
-      pkcs11_provider:
-        version_added: '2.12'
-        default: ''
-        description:
-          - PKCS11 SmartCard provider such as opensc, example: /usr/local/lib/opensc-pkcs11.so
-          - Requires sshpass version 1.06+, sshpass must support the -P option.
-        env: [{name: ANSIBLE_PKCS11_PROVIDER}]
-        ini:
-          - {key: pkcs11_provider, section: ssh_connection}
-        vars:
-          - name: ansible_ssh_pkcs11_provider
       timeout:
         default: 10
         description:
@@ -325,6 +314,17 @@ DOCUMENTATION = '''
         cli:
             - name: timeout
         type: integer
+      pkcs11_provider:
+        version_added: '2.12'
+        default: ""
+        description:
+          - "PKCS11 SmartCard provider such as opensc, example: /usr/local/lib/opensc-pkcs11.so"
+          - Requires sshpass version 1.06+, sshpass must support the -P option.
+        env: [{name: ANSIBLE_PKCS11_PROVIDER}]
+        ini:
+          - {key: pkcs11_provider, section: ssh_connection}
+        vars:
+          - name: ansible_ssh_pkcs11_provider
 '''
 
 try:
