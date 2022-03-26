@@ -1,3 +1,9 @@
+# About this Fork
+
+The `main` branch is the state I use in my Environment and differs mainly by applied fixes from open issues and pull requests in the upstream project.
+
+Branch `upstream` is at the same state as `master` in the project I [forked from](https://github.com/austinhyde/ansible-sshjail).
+
 # ansible-sshjail
 
 [![GitHub release](https://img.shields.io/github/release/austinhyde/ansible-sshjail.svg?style=flat-square)](https://github.com/austinhyde/ansible-sshjail/releases)
